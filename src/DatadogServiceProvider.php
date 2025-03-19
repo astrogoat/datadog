@@ -1,19 +1,19 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Astrogoat\Datadog;
 
 use Helix\Lego\Apps\App;
 use Helix\Lego\Apps\AppPackageServiceProvider;
 use Spatie\LaravelPackageTools\Package;
-use VendorName\Skeleton\Settings\SkeletonSettings;
+use Astrogoat\Datadog\Settings\DatadogSettings;
 
-class SkeletonServiceProvider extends AppPackageServiceProvider
+class DatadogServiceProvider extends AppPackageServiceProvider
 {
     public function registerApp(App $app): App
     {
         return $app
-            ->name('skeleton')
-            ->settings(SkeletonSettings::class)
+            ->name('datadog')
+            ->settings(DatadogSettings::class)
             ->migrations([
                 __DIR__ . '/../database/migrations',
                 __DIR__ . '/../database/migrations/settings',
@@ -24,6 +24,6 @@ class SkeletonServiceProvider extends AppPackageServiceProvider
 
     public function configurePackage(Package $package): void
     {
-        $package->name('skeleton')->hasConfigFile()->hasViews();
+        $package->name('datadog')->hasConfigFile()->hasViews();
     }
 }
