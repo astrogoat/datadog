@@ -7,11 +7,11 @@ use Illuminate\Validation\Rule;
 
 class DatadogSettings extends AppSettings
 {
-     public string $application_id;
-     public string $client_token;
-     public string $session_sample_rate;
-     public string $session_replay_sample_rate;
-     public string $default_privacy_level;
+    public string $application_id;
+    public string $client_token;
+    public string $session_sample_rate;
+    public string $session_replay_sample_rate;
+    public string $default_privacy_level;
 
     public function rules(): array
     {
