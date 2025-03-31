@@ -20,6 +20,7 @@
                     sessionSampleRate: {{ $setting->session_sample_rate }},
                     sessionReplaySampleRate: {{ $setting->session_replay_sample_rate }},
                     defaultPrivacyLevel: '{{ $setting->default_privacy_level }}',
+                    trackUserInteractions: true,
                 });
             })
         </script>
