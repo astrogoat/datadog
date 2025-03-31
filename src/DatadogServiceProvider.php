@@ -2,11 +2,11 @@
 
 namespace Astrogoat\Datadog;
 
+use Astrogoat\Datadog\Settings\DatadogSettings;
 use Helix\Lego\Apps\App;
 use Helix\Lego\Apps\AppPackageServiceProvider;
 use Helix\Lego\Apps\Services\IncludeFrontendViews;
 use Spatie\LaravelPackageTools\Package;
-use Astrogoat\Datadog\Settings\DatadogSettings;
 
 class DatadogServiceProvider extends AppPackageServiceProvider
 {
