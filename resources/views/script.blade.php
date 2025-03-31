@@ -2,7 +2,7 @@
     @php
         $setting = app(Astrogoat\Datadog\Settings\DatadogSettings::class);
     @endphp
-    @push('body')
+{{--    @push('body')--}} {{-- Uncomment this line if you want to push the script to the end of the body --}}
         <script>
             (function(h,o,u,n,d) {
                 h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
@@ -24,5 +24,5 @@
                 });
             })
         </script>
-    @endpush
+{{--    @endpush--}}
 @endif
