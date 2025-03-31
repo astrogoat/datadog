@@ -16,8 +16,7 @@
                     site: 'datadoghq.com',
                     service: 'stratasphere',
                     env: '{{ env('APP_ENV') }}',
-                    // Specify a version number to identify the deployed version of your application in Datadog
-                    // version: '1.0.0',
+                    version: '6.6.2',
                     sessionSampleRate: {{ $setting->session_sample_rate }},
                     sessionReplaySampleRate: {{ $setting->session_replay_sample_rate }},
                     defaultPrivacyLevel: '{{ $setting->default_privacy_level }}',
