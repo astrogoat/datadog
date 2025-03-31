@@ -13,8 +13,8 @@
                 window.DD_RUM.init({
                     clientToken: '{{ $setting->client_token }}',
                     applicationId: '{{ $setting->application_id }}',
-                    site: 'datadoghq.com',
-                    service: 'stratasphere',
+                    site: {{ config('datadog.site') }},
+                    service: {{ config('datadog.service') }},
                     env: '{{ env('APP_ENV') }}',
                     version: '6.6.2',
                     sessionSampleRate: {{ $setting->session_sample_rate }},
