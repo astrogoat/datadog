@@ -17,13 +17,14 @@
                 site: '{{ config('datadog.site') }}',
                 service: '{{ config('datadog.service') }}',
                 env: '{{ config('app.env') }}',
-                @if(Strata::appVersion())
-                    version: '{{ Strata::appVersion() }}'
-                @endif
                 sessionSampleRate: {{ $setting->session_sample_rate }},
                 sessionReplaySampleRate: {{ $setting->session_replay_sample_rate }},
                 defaultPrivacyLevel: '{{ $setting->default_privacy_level }}',
                 trackUserInteractions: true,
+                trackResources: true,
+                trackLongTasks: true,
+                enablePrivacyForActionName: true,
+
             });
         })
     </script>
