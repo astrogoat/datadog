@@ -24,11 +24,6 @@ class DatadogSettings extends AppSettings
         ];
     }
 
-    public static function encrypted(): array
-    {
-        return ['client_token'];
-    }
-
     public function description(): string
     {
         return 'Interact with Datadog.';

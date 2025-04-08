@@ -8,7 +8,7 @@ return new class extends SettingsMigration
     {
         $this->migrator->add('datadog.enabled', false);
         $this->migrator->add('datadog.application_id', '');
-        $this->migrator->addEncrypted('datadog.client_token', '');
+        $this->migrator->add('datadog.client_token', '');
         $this->migrator->add('datadog.session_sample_rate', 100);
         $this->migrator->add('datadog.session_replay_sample_rate', 20);
         $this->migrator->add('datadog.default_privacy_level', 'mask-user-input');
