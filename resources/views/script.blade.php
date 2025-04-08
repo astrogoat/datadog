@@ -18,7 +18,7 @@
                 service: '{{ config('datadog.service') }}',
                 env: '{{ config('app.env') }}',
                 @if(Strata::appVersion())
-                    version: '{{ Strata::appVersion() }}',
+                    version: '{{ Str::before(Strata::appVersion(), ' ') }}',
                 @endif
                 sessionSampleRate: {{ $setting->session_sample_rate }},
                 sessionReplaySampleRate: {{ $setting->session_replay_sample_rate }},
