@@ -2,9 +2,9 @@
 
 namespace Astrogoat\Datadog\Tests;
 
+use Astrogoat\Datadog\DatadogServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Astrogoat\Datadog\DatadogServiceProvider;
 
 class TestCase extends Orchestra
 {
