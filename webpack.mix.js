@@ -18,8 +18,8 @@ const mix = require('laravel-mix');
  |
  */
 
-// mix
-    // .postCss('resources/css/datadog.css', 'css', [require('tailwindcss')('tailwind.config.js')])
-    // .js('resources/js/datadog.js', 'js')
-    // .version()
-    // .setPublicPath('public/')
+mix
+    .postCss('resources/css/datadog.css', 'css', [require('tailwindcss')('tailwind.config.js')])
+    .js('resources/js/datadog.js', 'js')
+    .version()
+    .setPublicPath('public/')
